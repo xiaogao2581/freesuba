@@ -6,40 +6,38 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   type: vmess
-  server: 194.99.79.26
+  server: 47.76.44.32
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: 93ucrn4i0PffUAbk.v.3dns.vip
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /ws-vmess
     headers:
-      Host: ''
+      Host: 93ucrn4i0PffUAbk.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  type: vmess
-  server: 194.99.79.26
+  type: vless
+  server: 103.71.23.247
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: hk.152568.xyz
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /cdn/packages/runtime-core.tar.gz
     headers:
-      Host: aksai.org
+      Host: hk.152568.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   type: vless
-  server: 207.57.135.199
-  port: 8443
+  server: 103.71.23.247
+  port: 443
   uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
   udp: true
   tls: true
@@ -66,8 +64,8 @@ proxies:
       Host: hk.152568.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   type: vless
-  server: 103.71.23.247
-  port: 443
+  server: 85.149.211.28
+  port: 8443
   uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
   udp: true
   tls: true
@@ -79,19 +77,21 @@ proxies:
     headers:
       Host: hk.152568.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  type: vless
-  server: 103.71.23.247
+  type: vmess
+  server: 194.99.79.26
   port: 443
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hk.152568.xyz
+  servername: aksai.org
   network: ws
   ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
+    path: /linkvws
     headers:
-      Host: hk.152568.xyz
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
