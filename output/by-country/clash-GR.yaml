@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 LV 01 - xiaohe
+- name: 🇬🇷 GR 01 - xiaohe
   type: vless
-  server: check-host.net
-  port: 2053
-  uuid: 29b2a593-35ce-4865-97be-b7e1da2eb003
+  server: 83.147.216.223
+  port: 4433
+  uuid: 660174a2-d32d-4521-840d-d1853bfc80b8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shop.asamping.ir
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /@Marisa_kristi
     headers:
-      Host: shop.asamping.ir
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 LV 01 - xiaohe
+  - 🇬🇷 GR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 LV 01 - xiaohe
+  - 🇬🇷 GR 01 - xiaohe
 rules:
 - MATCH,PROXIES
