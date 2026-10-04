@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
-  type: ss
-  server: 13.61.185.249
+  type: vless
+  server: 109.120.134.243
   port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    path: pyip=bpb.yousef.isegaro.comfp=random
+    headers:
+      Host: free.cndyw.ggff.net
 proxy-groups:
 - name: PROXIES
   type: select
