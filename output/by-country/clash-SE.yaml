@@ -12,17 +12,6 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇸🇪 SE 02 - xiaohe
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 03 - xiaohe
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -35,6 +24,20 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 03 - xiaohe
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 16f63796-3e98-5a7b-b016-540ce6e79007
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se1.v2less.site
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: se1.v2less.site
 proxy-groups:
 - name: PROXIES
   type: select
